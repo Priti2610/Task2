@@ -1,0 +1,162 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    transition: 0.3s;
+}
+
+body {
+    background: #f3f3f3; /* Light mode background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffff; /* Card color */
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #333; /* Light mode text color */
+}
+
+#themeToggle {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2196F3; /* Light mode button color */
+    color: white;
+    cursor: pointer;
+}
+
+/* INPUT */
+.input-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    background: #ffffff; /* Input box color */
+    color: #333; /* Text color */
+}
+
+#addTask {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #2196F3;
+    color: white;
+}
+
+/* FILTER BUTTONS */
+.filters {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.filter {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+}
+
+.filter.active {
+    background: #2196F3;
+    color: white;
+}
+
+/* COUNTERS */
+.counters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* TASK LIST */
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eaeaea;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Dark mode (hard-coded) */
+body.dark {
+    background: #121212;
+}
+
+body.dark .container {
+    background: #1e1e1e;
+}
+
+body.dark h2,
+body.dark .counters {
+    color: white;
+}
+
+body.dark input {
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark #themeToggle {
+    background: #0a84ff;
+}
+
+body.dark .filter.active {
+    background: #0a84ff;
+}
+
+body.dark #taskList li {
+    background: #2b2b2b;
+}
+
+/* COMPLETED TASK */
+.task-completed {
+    text-decoration: line-through;
+    color: #888; /* Dark gray for completed tasks */
+}
+
+/* BUTTONS */
+.btns button {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.complete-btn {
+    background: green;
+}
+
+.delete-btn {
+    background: red;
+}
