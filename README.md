@@ -5,6 +5,7 @@ Add, complete, delete, and filter tasks — all stored automatically using local
 Includes Dark/Light Mode, smooth animations, and a typing effect in the heading that looks stylish and modern.
 
 ✨ Features
+
 ✅ Add / Delete / Complete Tasks
 
 Easily add, finish, or remove your daily tasks.
